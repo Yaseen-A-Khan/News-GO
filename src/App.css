@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+  font-size: .75rem;
+  background-color: orangered;
+}
+
+h1{
+  font-size: 3.2rem;
+  margin: 2rem 0;
+  text-align: center;
+  color:#15133c;
+}
+
+h2{
+  font-family: system-ui;
+  font-size: 2.4rem;
+}
+
+p{
+  margin: 2rem 0;
+  color: rgb(54, 12, 93);
+  font-weight: 400;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+.pagination-btn > p{
+  color: white;
+}
+
+span{
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.feed-div{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding-left: 5%;
+  gap: 4rem;
+}
+
+.search-bar{
+  border-radius: 20px;
+}
+
+.card{
+  min-width: 20rem;
+  width: 40vw;
+  padding: 4rem;
+  background-color: rgb(150, 203, 246);
+  box-shadow: 5px 10px 40px #474747;
+}
+
+.card-button{
+  flex-direction: row;
+  widows: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-button a{
+  color: blue;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.card-button a:last-child{
+  color: red;
+}
+
+form{
+  display: grid;
+  place-items: center;
+}
+
+input{
+  padding: 1rem;
+  min-width: 40rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  border: none;
+  border-bottom: 0.2rem solid #15133c;
+  outline: none;
+}
+
+.pagination-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  padding: 0.8rem 2.2rem;
+  border: none;
+  font-size: 1.6rem;
+  background-color: #15133c;
+  color: white;
+  margin: 3rem;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+}
+
