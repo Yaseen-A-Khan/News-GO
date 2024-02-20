@@ -30,9 +30,11 @@ const Feed = () => {
             </p>
             <div className="card-button">
               <a href={url} target="_blank">
+                {/*can add an icon for reading more*/}
                 Read More
               </a>
               <a href="#" onClick={() => removePost(objectID)}>
+                {/*can add an icon for removing*/}
                 Remove
               </a>
             </div>
