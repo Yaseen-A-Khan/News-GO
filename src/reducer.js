@@ -24,7 +24,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         hits: state.hits.filter(
-          (currEle) => currEle.objectId !== action.payload
+          (currEle) => currEle.objectID !== action.payload
         ),
       };
     case "SEARCH_QUERY":
