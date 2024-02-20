@@ -15,7 +15,7 @@ const Feed = () => {
   return (
     <div className="feed-div">
       {hits.map((currPost) => {
-        const { author, title, objectId, updated_at, url } = currPost;
+        const { author, title, objectID, updated_at, url } = currPost;
 
         let updatedTime = updated_at.split(":");
         let updatedDate = updatedTime[0].split("-");
@@ -23,7 +23,7 @@ const Feed = () => {
         updatedDate = `${trueDate[0]}${trueDate[1]}-${updatedDate[1]}-${updatedDate[0]}`;
 
         return (
-          <div className="card" key={objectId}>
+          <div className="card" key={objectID}>
             <h2>{title}</h2>
             <p>
               By <span>{author}</span> | <span>{updatedDate}</span>
@@ -32,7 +32,7 @@ const Feed = () => {
               <a href={url} target="_blank">
                 Read More
               </a>
-              <a href="#" onClick={() => removePost(objectId)}>
+              <a href="#" onClick={() => removePost(objectID)}>
                 Remove
               </a>
             </div>
